@@ -52,7 +52,7 @@ modprobe i2c_bcm2708
 sync
 /recalbox/share/system/bin/remoteswitch -r 17 -s 18 -n 4 &
 
-echo 'It will be reboot later to finish install.'
+echo "It will be reboot later to finish install."
 sync
 sleep 2
 reboot
