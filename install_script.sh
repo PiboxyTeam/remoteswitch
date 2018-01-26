@@ -58,10 +58,10 @@ sleep 2
 reboot
 else 
 
-echo 'Your batocera wiringpi can not be detects your Raspberry Pi model,If you think it is a BUG, please contact us.';
-echo '=================================================='
+echo "Your batocera wiringpi can not be detects your Raspberry Pi model,If you think it is a BUG, please contact us.";
+echo "=================================================="
 gpio readall
-echo '=================================================='
+echo "=================================================="
 exit
 
 fi
