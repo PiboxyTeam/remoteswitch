@@ -93,7 +93,7 @@ fi
 sudo sed /etc/modprobe.d/raspi-blacklist.conf -i -e "s/^\(blacklist[[:space:]]*i2c[-_]bcm2708\)/#\1/"
 sudo sed /etc/modules -i -e "s/^#[[:space:]]*\(i2c[-_]dev\)/\1/"
 if ! grep -q "^i2c[-_]dev" /etc/modules; then
-sudo printf "i2c-dev\n" >> /etc/modules
+sudo sh -c " printf "i2c-dev\n" >> /etc/modules "
 fi
 sudo dtparam i2c_arm=on
 sudo modprobe i2c-dev
