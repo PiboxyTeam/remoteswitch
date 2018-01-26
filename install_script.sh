@@ -52,8 +52,9 @@ modprobe i2c_bcm2708
 sync
 /recalbox/share/system/bin/remoteswitch -r 17 -s 18 -n 4 &
 
-echo 'It will be reboot later to finish install.';
-sleep 5;
+echo 'It will be reboot later to finish install.'
+sleep 5
+reboot
 else 
 
 echo 'Your batocera wiringpi can not be detects your Raspberry Pi model,If you think it is a BUG, please contact us.';
