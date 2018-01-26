@@ -53,7 +53,8 @@ sync
 /recalbox/share/system/bin/remoteswitch -r 17 -s 18 -n 4 &
 
 echo 'It will be reboot later to finish install.'
-sleep 5
+sync
+sleep 2
 reboot
 else 
 
