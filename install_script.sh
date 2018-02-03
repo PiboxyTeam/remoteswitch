@@ -74,7 +74,7 @@ sudo apt-get update
 sudo apt-get install -qq wiringpi 
 sudo sh -c " curl http://piboxy.com/download/remoteswitch > /bin/remoteswitch "
 sudo chmod a+x /bin/remoteswitch
-sudo sed -i '$i sudo remoteswitch -r 17 -s 18 -n 4 &' /etc/rc.local
+sudo sed -i '$i sudo remoteswitch -r 17 -s 18 -n 4 >> /tmp/piboxy.log &' /etc/rc.local
 sudo sync
 
 #Enable I2C
