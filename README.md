@@ -13,8 +13,8 @@ If you want to use the ***Tinker Board***, driver is provided form Maker, we tes
 Platform|Version 0(HW V1.0)|Version 1 Beta(HW V1.1)|Notes
 ------------------ | :----------: | :----------: | :---------
 Raspberry Pi 3 Model B|√|√|
-Raspberry Pi 2 Model B |√|in progress|
-Raspberry Pi Model B+|√|in progress|
+Raspberry Pi 2 Model B |√|wip|
+Raspberry Pi Model B+|√|wip|
 Tinker Board |√|×|Only Power On/Off Reboot Function
 
 ## Version Table
