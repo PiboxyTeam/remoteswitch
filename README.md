@@ -17,10 +17,10 @@ Raspberry Pi 2 Model B |√|-|
 Raspberry Pi Model B+|√|-|
 Tinker Board |√||Only Power On/Off Reboot Function
 
-√ = Fully Test
-- = Partially Test
-* = Fully Test but not have all function
-× = Not compatible
+> √ = Fully Test
+> - = Partially Test
+> * = Fully Test but not have all function 
+> × = Not compatible
 
 ## Version Table
 
