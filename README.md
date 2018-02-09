@@ -24,5 +24,5 @@ Tinker Board |√||Only Power On/Off Reboot Function
 
 ## Version Table
 
-Version 0 : Basic Function
-Version 1 Beta : Power Supply Watch Dog + Fan Controler + Version 0
+ - Version 0 : Basic Function
+ - Version 1 Beta : Power Supply Watch Dog + Fan Controler + Version 0
