@@ -4,7 +4,7 @@
 hostname=$(hostname)
 if [[ "$hostname" == "BATOCERA" ]];then
 
-echo "Install BATOCERA Piboxy Driver..."
+echo "Installing BATOCERA Piboxy Driver..."
 
 gpio readall > /dev/null 2>&1
 
@@ -52,13 +52,13 @@ modprobe i2c_bcm2708
 sync
 /recalbox/share/system/bin/remoteswitch -r 17 -s 18 -n 4 &
 
-echo "It will be reboot later to finish install."
+echo "Rebooting to finish installation"
 sync
 sleep 2
 reboot
 else 
 
-echo "Your batocera wiringpi can not be detects your Raspberry Pi model,If you think it is a BUG, please contact us.";
+echo "Your batocera wiringpi can not detect your Raspberry Pi model, if you think it is a BUG, please contact us.";
 echo "=================================================="
 gpio readall
 echo "=================================================="
@@ -68,7 +68,7 @@ fi
 
 else
 
-echo "Install Piboxy Driver..."
+echo "Installing Piboxy Driver..."
 
 sudo apt-get update
 sudo apt-get install -qq wiringpi 
