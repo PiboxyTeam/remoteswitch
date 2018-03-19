@@ -12,9 +12,10 @@ If you want to use the ***Tinker Board***, the driver is provided from Maker.  W
 
 Platform|Version 0(HW V1.0)|Version 1 Beta(HW V1.1)|Notes
 ------------------ | :----------: | :----------: | :---------
+Raspberry Pi 3 Model B Plus|x|√|Depends on the wiringPi library to work properly.
 Raspberry Pi 3 Model B|√|√|
-Raspberry Pi 2 Model B |√|wip|
-Raspberry Pi Model B+|√|wip|
+Raspberry Pi 2 Model B |√|√|
+Raspberry Pi Model B+|√|x|
 Tinker Board |√|×|Only Power On/Off Reboot Function
 
 ## Version Table
