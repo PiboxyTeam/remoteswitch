@@ -10,7 +10,7 @@ If you want to use the ***Tinker Board***, the driver is provided from Maker.  W
 
 ## Compatibility
 
-Platform|Version 0(HW V1.0)|Version 1 Beta(HW V1.1)|Notes
+Platform|Version 0(HW V1.0)|Version 1(HW V1.2)|Notes
 ------------------ | :----------: | :----------: | :---------
 Raspberry Pi 3 Model B Plus|x|√|Depends on the wiringPi library to work properly.
 Raspberry Pi 3 Model B|√|√|
