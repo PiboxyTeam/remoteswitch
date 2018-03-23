@@ -7,10 +7,17 @@ If you want to use the ***Tinker Board***, the driver is provided from Maker.  W
 
 #### `curl -skSL https://git.io/vNugv | bash`
 
+## Updating(Requiered for Raspberry 3 B Plus)
+
+update your wiringPi driver to support the new feature.
+
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo rpi-update
 
 ## Compatibility
 
-Platform|Version 0(HW V1.0)|Version 1(HW V1.2)|Notes
+Platform|Version 0(HW V1.0)|Version 1(HW V1.1 - V2.0)|Notes
 ------------------ | :----------: | :----------: | :---------
 Raspberry Pi 3 Model B Plus|x|√|Depends on the wiringPi library to work properly.
 Raspberry Pi 3 Model B|√|√|
