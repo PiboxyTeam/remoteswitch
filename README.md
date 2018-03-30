@@ -16,7 +16,7 @@ http://piboxy.com/os-images/retropie-4.3.15-rpi2_rpi3-with-wiringpi-2.46.zip
 
 Platform|Version 0(HW V1.0)|Version 1(HW V1.1 - V2.0)|Notes
 ------------------ | :----------: | :----------: | :---------
-Raspberry Pi 3 Model B Plus|x|Tested by Beta Images|Depends on the wiringPi library to work properly.
+Raspberry Pi 3 Model B Plus|x|Part. Tested by Beta Images|Depends on the wiringPi library to work properly.
 Raspberry Pi 3 Model B|√|√|
 Raspberry Pi 2 Model B |√|√|
 Raspberry Pi Model B+|√|x|
