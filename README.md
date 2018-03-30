@@ -7,19 +7,16 @@ If you want to use the ***Tinker Board***, the driver is provided from Maker.  W
 
 #### `curl -skSL https://git.io/vNugv | bash`
 
-## Updating(Requiered for Raspberry 3 B Plus)
+## Beta Images(for Raspberry 3 B Plus)
 
-update your wiringPi driver to support the new feature.
+http://piboxy.com/os-images/2018-03-13-raspbian-stretch-with-wiringpi-2.46.zip
 
-    sudo apt-get update
-    sudo apt-get upgrade
-    sudo rpi-update
-
+http://piboxy.com/os-images/retropie-4.3.15-rpi2_rpi3-with-wiringpi-2.46.zip
 ## Compatibility
 
 Platform|Version 0(HW V1.0)|Version 1(HW V1.1 - V2.0)|Notes
 ------------------ | :----------: | :----------: | :---------
-Raspberry Pi 3 Model B Plus|x|√|Depends on the wiringPi library to work properly.
+Raspberry Pi 3 Model B Plus|x|Tested by Beta Images|Depends on the wiringPi library to work properly.
 Raspberry Pi 3 Model B|√|√|
 Raspberry Pi 2 Model B |√|√|
 Raspberry Pi Model B+|√|x|
