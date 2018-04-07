@@ -26,3 +26,7 @@ Tinker Board |√|×|Only Power On/Off Reboot Function
 
  - Version 0 : Basic Functions
  - Version 1 Beta : Power Supply Watch Dog + Fan Controler + Version 0
+ 
+ ## Source Code
+
+ - The source code is for reference only, please refer to the manual for more features (released in the future)
