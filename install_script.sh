@@ -9,7 +9,7 @@ sleep 2s
 
 script=/opt/PiBoxy/recalbox_SafeShutdown.py
 
-if [ !-e  $script ];
+if [ ! -e  $script ];
         then
         wget --no-check-certificate -O  $script "https://raw.githubusercontent.com/PiboxyTeam/remoteswitch/recalbox/recalbox_SafeShutdown.py"
 fi
