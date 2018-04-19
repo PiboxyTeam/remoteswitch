@@ -3,7 +3,7 @@ For those who want to get started quickly and conveniently, you may install Pibo
 
 #### `curl -sSL piboxy.com/install | bash`
 
-If you use ***recalbox*** as your working system, use the following script, because recalbox uses different GPIO management mechanisms, you can also choose batocera instead of recalbox.
+If you use ***recalbox*** as your working system, use the following script, because recalbox uses different GPIO lib, you can also choose batocera instead of recalbox.
 
 #### `curl -sSL piboxy.com/install/recalbox | bash`
 
