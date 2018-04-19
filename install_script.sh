@@ -9,9 +9,11 @@ sleep 2s
 
 script=/opt/PiBoxy/recalbox_SafeShutdown.py
 
-if [ -ne  $script ];
-        then
-        wget --no-check-certificate -O  $script "https://raw.githubusercontent.com/PiboxyTeam/remoteswitch/recalbox/recalbox_SafeShutdown.py"
+if [ -e $script ];
+	then
+		echo "Script SafeShutdown.py already exists. Doing nothing."
+	else
+                wget --no-check-certificate -O  $script "https://raw.githubusercontent.com/PiboxyTeam/remoteswitch/recalbox/recalbox_SafeShutdown.py"
 fi
 #-----------------------------------------------------------
 
