@@ -3,9 +3,14 @@ For those who want to get started quickly and conveniently, you may install Pibo
 
 #### `curl -sSL piboxy.com/install | bash`
 
+If you use ***recalbox*** as your working system, use the following script, because recalbox uses different GPIO management mechanisms, you can also choose batocera instead of recalbox.
+
+#### `http://piboxy.com/install/recalbox`
+
 If you want to use the ***Tinker Board***, the driver is provided from Maker.  We have only tested the 20170417-tinker-board-linaro-stretch-alip-v1.8 with v1.0(version 0) hardware and you need to install the software before connecting the hardware.
 
 #### `curl -skSL https://git.io/vNugv | bash`
+
 
 ## Beta Images(for Raspberry 3 B Plus)
 
