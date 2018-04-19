@@ -13,7 +13,6 @@ def init():
 	GPIO.setmode(GPIO.BCM)
 	GPIO.setup(shutdownPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 	GPIO.setup(rebootPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-	GPIO.setup(ledPin, GPIO.OUT)
 	GPIO.setup(signalPin, GPIO.OUT)
 	GPIO.output(signalPin, GPIO.HIGH)
 	GPIO.setwarnings(False)
