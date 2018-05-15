@@ -4,4 +4,4 @@ For those who want to get started quickly and conveniently, you may install Pibo
 #### `curl -sSL piboxy.com/recalbox_install | bash`
 
 ## Beta Images(for Recalbox with native I2C + WiringPi Support,Does not support Raspberry 3B Plus)
-http://piboxy.com/os-images/recalbox-180420-with-native-wiringpi.zip
+https://mega.nz/#F!aSQllDoA!PvU_psxUsalKNcCYPsq2JQ
