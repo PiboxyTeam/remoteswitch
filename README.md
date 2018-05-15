@@ -12,11 +12,9 @@ If you want to use the ***Tinker Board***, the driver is provided from Maker.  W
 #### `curl -skSL https://git.io/vNugv | bash`
 
 ## Beta Images(for Raspberry 3B Plus)
-http://piboxy.com/os-images/2018-03-13-raspbian-stretch-with-wiringpi-2.46.zip
-
-http://piboxy.com/os-images/retropie-4.3.15-rpi2_rpi3-with-wiringpi-2.46.zip
+https://mega.nz/#F!aSQllDoA!PvU_psxUsalKNcCYPsq2JQ
 ## Beta Images(for Recalbox with native I2C + WiringPi Support,Does not support Raspberry 3B Plus)
-http://piboxy.com/os-images/recalbox-180420-with-native-wiringpi.zip
+https://mega.nz/#F!aSQllDoA!PvU_psxUsalKNcCYPsq2JQ
 ## Compatibility
 
 Platform|Version 0(HW V1.0)|Version 1(HW V1.1 - V2.0)|Notes
