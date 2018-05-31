@@ -3,6 +3,6 @@
 echo "Simple Clean Piboxy Driver..."
 
 sudo rm /bin/remoteswitch 
-sudo sed -e '/remoteswitch/d' /etc/rc.local
+sudo sed -e '/remoteswitch/d' /etc/rc.local > /etc/rc.local
 
 echo "Simple Clean Piboxy Driver Done!"
