@@ -12,10 +12,10 @@ If you want to use the ***Tinker Board***, the driver is provided from Maker.  W
 #### `curl -skSL https://git.io/vNugv | bash`
 
 ## Beta Images(for Raspberry 3B Plus)
-https://mega.nz/#!OCwkiaLI!zHCGNT2PoUTxNDWypK4b5qkVunJ-SW2LKEYoIRhzJNQ (Raspbian)
-https://mega.nz/#!aLxwwSyD!LcfDG8uiWbmafwXGiFs4M6zVvbzY_DL-14MUQJuzX3A (RetroPie)
+ (Raspbian) https://mega.nz/#!OCwkiaLI!zHCGNT2PoUTxNDWypK4b5qkVunJ-SW2LKEYoIRhzJNQ
+ (RetroPie) https://mega.nz/#!aLxwwSyD!LcfDG8uiWbmafwXGiFs4M6zVvbzY_DL-14MUQJuzX3A
 ## Beta Images(for Recalbox with native I2C + WiringPi Support,Does not support Raspberry 3B Plus)
-https://mega.nz/#!ueokjCbZ!GyZeC5ppWZ22CX5kb2upV0AS8h9EsyHZWSSL-Wc0u9g (Recalbox)
+ (Recalbox) https://mega.nz/#!ueokjCbZ!GyZeC5ppWZ22CX5kb2upV0AS8h9EsyHZWSSL-Wc0u9g
 ## Compatibility
 
 Platform|Version 0(HW V1.0)|Version 1(HW V1.1 - V2.0)|Notes
