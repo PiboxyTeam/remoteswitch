@@ -71,6 +71,7 @@ else
 echo "Installing Piboxy Driver..."
 
 sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install -y -qq wiringpi
 sudo sh -c " curl http://piboxy.com/download/remoteswitch > /bin/remoteswitch "
 sudo chmod a+x /bin/remoteswitch
