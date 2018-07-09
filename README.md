@@ -20,7 +20,7 @@ If you want to use the ***Tinker Board***, the driver is provided from Maker.  W
 
 Platform|Version 0(HW V1.0)|Version 1(HW V1.1 - V2.0)|Notes
 ------------------ | :----------: | :----------: | :---------
-Raspberry Pi 3 Model B Plus|x|Part. Tested by Beta Images|Depends on the wiringPi library to work properly.
+Raspberry Pi 3 Model B Plus|x|√
 Raspberry Pi 3 Model B|√|√|
 Raspberry Pi 2 Model B |√|√|
 Raspberry Pi Model B+|√|x|
