@@ -17,6 +17,8 @@ Any OS/Main Board with Piboxy Driver,It can uninstall all file/daemon by this co
 
 #### `curl -sSL piboxy.com/uninstall | bash`
 
+## Revision Table
+
 Platform|Version 0(HW V1.0)|Version 1(HW V1.1 - V2.0)|Notes
 ------------------ | :----------: | :----------: | :---------
 Raspberry Pi 3 Model B Plus|x|√
