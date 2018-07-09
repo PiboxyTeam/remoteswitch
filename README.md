@@ -11,12 +11,11 @@ If you want to use the ***Tinker Board***, the driver is provided from Maker.  W
 
 #### `curl -skSL https://git.io/vNugv | bash`
 
-## Beta (archive) Images(for Raspberry 3B Plus)
- (Raspbian) https://mega.nz/#!OCwkiaLI!zHCGNT2PoUTxNDWypK4b5qkVunJ-SW2LKEYoIRhzJNQ
- (RetroPie) https://mega.nz/#!aLxwwSyD!LcfDG8uiWbmafwXGiFs4M6zVvbzY_DL-14MUQJuzX3A
-## Beta (archive) Images(for Recalbox with native I2C + WiringPi Support,Does not support Raspberry 3B Plus)
- (Recalbox) https://mega.nz/#!ueokjCbZ!GyZeC5ppWZ22CX5kb2upV0AS8h9EsyHZWSSL-Wc0u9g
-## Compatibility
+## Easy UnInstall
+
+Any OS/Main Board with Piboxy Driver,It can uninstall all file/daemon by this command.
+
+#### `curl -sSL piboxy.com/uninstall | bash`
 
 Platform|Version 0(HW V1.0)|Version 1(HW V1.1 - V2.0)|Notes
 ------------------ | :----------: | :----------: | :---------
