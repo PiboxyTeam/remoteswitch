@@ -11,10 +11,10 @@ If you want to use the ***Tinker Board***, the driver is provided from Maker.  W
 
 #### `curl -skSL https://git.io/vNugv | bash`
 
-## Beta Images(for Raspberry 3B Plus)
+## Beta (archive) Images(for Raspberry 3B Plus)
  (Raspbian) https://mega.nz/#!OCwkiaLI!zHCGNT2PoUTxNDWypK4b5qkVunJ-SW2LKEYoIRhzJNQ
  (RetroPie) https://mega.nz/#!aLxwwSyD!LcfDG8uiWbmafwXGiFs4M6zVvbzY_DL-14MUQJuzX3A
-## Beta Images(for Recalbox with native I2C + WiringPi Support,Does not support Raspberry 3B Plus)
+## Beta (archive) Images(for Recalbox with native I2C + WiringPi Support,Does not support Raspberry 3B Plus)
  (Recalbox) https://mega.nz/#!ueokjCbZ!GyZeC5ppWZ22CX5kb2upV0AS8h9EsyHZWSSL-Wc0u9g
 ## Compatibility
 
@@ -29,7 +29,7 @@ Tinker Board |√|×|Only Power On/Off Reboot Function
 ## Version Table
 
  - Version 0 : Basic Functions
- - Version 1 Beta : Power Supply Watch Dog + Fan Controler + Version 0
+ - Version 1 : Power Supply Watch Dog + Fan Controler + Version 0
  
  ## Source Code
 
