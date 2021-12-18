@@ -135,7 +135,7 @@ void Fan_Speed_Detect(void)
     if(err != 0)
     {
 		err_stop = 1;
-        printf("Fan Speed Modify Error:( %d - due to raspberrypi thremal manager),Reboot your pi and piboxy please.\n", err);
+        printf("Fan Speed Modify Error:( %d - due to raspberrypi thermal manager),Reboot your pi and piboxy please.\n", err);
     }
 
     fflush(stdout);
