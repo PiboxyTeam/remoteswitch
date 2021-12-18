@@ -25,8 +25,8 @@ static int Board_Version = 0;
 
 int g_i2c_fd = -1;
 
-unsigned int temp_limit_high = 40000;
-unsigned int temp_limit_low = 15000;
+unsigned int fan_temp_max_speed = 90;
+unsigned int fan_temp_turn_on = 65;
 unsigned int warning_voltage_threshold = 4850;
 
 int I2C_ReadBoardVersion(void)
@@ -100,6 +100,12 @@ int I2C_ReadBoardVersion(void)
 
 void Fan_Speed_Detect(void)
 {
+    /*
+     * The fan speed is controlled by a pwm-value.
+     * The Controller seems to require a 16bit value which seems a bit unnecessary.
+     * Just use values 0-255 and then shift left by 8 bits.
+     * The piboxy-fan starts spinning without weird sounds at a pwm value of 180.
+     */
     int cpu_temp_fd = -1;
     int cpu_temp = 0;
     //int cpu_temp_origin = 0;
@@ -115,26 +121,39 @@ void Fan_Speed_Detect(void)
     cpu_temp_fd = open("/sys/class/thermal/thermal_zone0/temp", O_RDONLY);
     lseek(cpu_temp_fd, 0, SEEK_SET);
     read(cpu_temp_fd, temp_buf, sizeof(temp_buf));
-    cpu_temp = atoi(temp_buf);
+    cpu_temp = atoi(temp_buf) / 1000;
     //cpu_temp_origin = cpu_temp;
 
-    if(cpu_temp > temp_limit_high)  /* 40 degC */
+    if(cpu_temp < fan_temp_turn_on)
     {
-        cpu_temp = temp_limit_high;
+        pwm_value = 0;
     }
-    else if(cpu_temp < temp_limit_low)   /* 15 degC */
+    else if (cpu_temp >= fan_temp_max_speed)
     {
-        cpu_temp = temp_limit_low;
+        pwm_value = 255;
     }
-    pwm_value = ((float)65535.0 / (float)temp_limit_high) * (float)cpu_temp;
+    else
+    {
+        float fan_temp_range = fan_temp_max_speed - fan_temp_turn_on;
+        float temp_diff = cpu_temp - fan_temp_turn_on;
+        float fan_percentage = temp_diff / fan_temp_range;
+        int pwm_min_value = 180;
+        pwm_value = pwm_min_value + ((255 - pwm_min_value) * fan_percentage);
 
-    err += wiringPiI2CWriteReg8 (g_i2c_fd, 0x00, ((pwm_value >> 8) & 0xFF)) ;		/* write pwm */
+	if (pwm_value > 255) pwm_value = 255;
+    }
+
+    printf("pwm_value=%d\n", pwm_value);
+    pwm_value = pwm_value << 8;
+
+    /* write pwm */
+    err += wiringPiI2CWriteReg8 (g_i2c_fd, 0x00, ((pwm_value >> 8) & 0xFF));
     usleep(100 * 1000);
-    err += wiringPiI2CWriteReg8 (g_i2c_fd, 0x01, pwm_value & 0xFF) ;
+    err += wiringPiI2CWriteReg8 (g_i2c_fd, 0x01, pwm_value & 0xFF);
 
     if(err != 0)
     {
-		err_stop = 1;
+	err_stop = 1;
         printf("Fan Speed Modify Error:( %d - due to raspberrypi thermal manager),Reboot your pi and piboxy please.\n", err);
     }
 
